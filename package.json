@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon src/server.js",
-    "ikcleanci": "rm -fr node_modules/ && npm cache clean -vf && npm ci && npm run server",
+    "ikcleanci": "rm -fr node_modules/ && npm cache clean -vf && npm ci && npm outdated",
     "ikupdate": "npm i && npm update && npm audit fix --force && npm outdated"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
   },
   "dependencies": {
     "cors": "^2.8.5",
